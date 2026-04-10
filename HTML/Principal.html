@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redireccionamiento QR</title>
+    <link rel="stylesheet" href="../CSS/Estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contactanos</h1>
+        </div>
+        <div class="content">
+            <div class="social-links">
+                <a href="https://wa.me/56940934661" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://www.instagram.com/xAshura3x" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <button class="social-link" id="email-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Correo</span>
+                </button>
+                <a href="https://xashura3x.github.io/Pag_Portafolio/HTML/Pag_principal.html" target="_blank" class="social-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Portafolio</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="email-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enviar Correo</h2>
+            <form id="email-form">
+                <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Tu Correo" required>
+                <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="../JS/Scripts.js"></script>
+</body>
+</html>
