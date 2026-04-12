@@ -24,6 +24,13 @@ window.addEventListener('click', (event) => {
     }
 });
 
+// Auto-resize textarea basado en el contenido
+const messageTextarea = document.getElementById('message');
+messageTextarea.addEventListener('input', () => {
+    messageTextarea.style.height = 'auto';
+    messageTextarea.style.height = messageTextarea.scrollHeight + 'px';
+});
+
 // Enviar formulario con EmailJS
 emailForm.addEventListener('submit', (event) => {
     event.preventDefault();
